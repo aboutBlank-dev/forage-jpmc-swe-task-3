@@ -10,8 +10,8 @@ export interface Row {
   trigger_alert: number | undefined;
 }
 
-const LOWER_BOUND = 0.9; // -10%
-const UPPER_BOUND = 1.1; // +10%
+const LOWER_BOUND = 0.95; // -5%
+const UPPER_BOUND = 1.05; // +5%
 
 export class DataManipulator {
   static generateRow(serverResponds: ServerRespond[]): Row {
